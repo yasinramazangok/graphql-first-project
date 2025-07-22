@@ -24,6 +24,51 @@ const resolvers = {
         instructor(_, args){
             return db.instructorList.find(i => i.id === args.id)
         }
+    },
+
+    Instructor:{
+        courses(parent){
+            return db.courseList.filter(c => c.instructor_id === parent.id)
+        },
+    },
+
+    Course:{
+        instructor(parent){
+            return db.instructorList.find(i => i.id === parent.instructor_id)        
+        },
+    },
+
+    Mutation:{
+        deleteCourse(_,args){
+            db.courseList = db.courseList.filter(c => c.id !== args.id)
+            return db.courseList
+        },
+
+        getInstructorById(_,args){
+            db.instructorList = db.instructorList.filter(i => i.id === args.id)
+            return db.instructorList
+        },
+
+        addCourse(_,args){
+            let course = {
+                ...args.courseAdd,
+                id:Math.floor(Math.random()*10000).toString()
+            }
+
+            db.courseList.push(course)
+            return course
+        },
+
+        updateCourse(_,args){
+            db.courseList = db.courseList.map(c => {
+                if(c.id === args.id){
+                    return {...c, ...args.courseUpdate}
+                }
+
+                return c
+            })
+            return db.courseList.find(c => c.id === args.id)
+        }
     }
 }
 
