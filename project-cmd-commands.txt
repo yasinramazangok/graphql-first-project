@@ -1,0 +1,81 @@
+C:\Users\yasinramazangok>cd desktop/graphql-first-project
+
+C:\Users\yasinramazangok\Desktop\graphql-first-project>node -v
+v22.17.1
+
+C:\Users\yasinramazangok\Desktop\graphql-first-project>npm -v
+10.9.2
+
+C:\Users\yasinramazangok\Desktop\graphql-first-project>mkdir graphql-server
+
+C:\Users\yasinramazangok\Desktop\graphql-first-project>cd graphql-server
+
+C:\Users\yasinramazangok\Desktop\graphql-first-project\graphql-server>npm init -y
+Wrote to C:\Users\yasinramazangok\Desktop\graphql-first-project\graphql-server\package.json:
+
+{
+  "name": "graphql-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
+
+
+C:\Users\yasinramazangok\Desktop\graphql-first-project\graphql-server>npm pkg set type="module"
+
+C:\Users\yasinramazangok\Desktop\graphql-first-project\graphql-server>code .
+
+PS C:\Users\yasinramazangok\Desktop\graphql-first-project\graphql-server> npm i @apollo/server graphql
+
+added 116 packages, and audited 117 packages in 8s
+
+24 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+PS C:\Users\yasinramazangok\Desktop\graphql-first-project\graphql-server> node index
+node:internal/modules/run_main:123
+    triggerUncaughtException(
+    ^
+
+Error [ERR_MODULE_NOT_FOUND]: Cannot find module 'C:\Users\yasinramazangok\Desktop\graphql-first-project\graphql-server\schema' imported from C:\Users\yasinramazangok\Desktop\graphql-first-project\graphql-server\index.js
+Did you mean to import "./schema.js"?
+    at finalizeResolution (node:internal/modules/esm/resolve:275:11)
+    at moduleResolve (node:internal/modules/esm/resolve:860:10)
+    at defaultResolve (node:internal/modules/esm/resolve:984:11)
+    at ModuleLoader.defaultResolve (node:internal/modules/esm/loader:780:12)
+    at #cachedDefaultResolve (node:internal/modules/esm/loader:704:25)
+    at ModuleLoader.resolve (node:internal/modules/esm/loader:687:38)
+    at ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:305:38)
+    at ModuleJob._link (node:internal/modules/esm/module_job:175:49) {
+  code: 'ERR_MODULE_NOT_FOUND',
+  url: 'file:///C:/Users/yasinramazangok/Desktop/graphql-first-project/graphql-server/schema'
+}
+
+Node.js v22.17.1
+
+PS C:\Users\yasinramazangok\Desktop\graphql-first-project\graphql-server> node index
+server başlatıldı! - port : 4000
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
