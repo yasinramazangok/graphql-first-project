@@ -55,25 +55,25 @@ Visit: http://localhost:4000
 
 ## 📌 Future Improvements
 
-⌨️ Add persistent storage (e.g. MongoDB)
-🧪 Add validation and error handling
-🛡️ Apply authentication middleware
+- ⌨️ Add persistent storage (e.g. MongoDB)
+- 🧪 Add validation and error handling
+- 🛡️ Apply authentication middleware
 
 ---
 
 ## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome!  
-Feel free to `Fork` this repo and submit a `Pull Request`.
+> Contributions, issues and feature requests are welcome!  
+> Feel free to `Fork` this repo and submit a `Pull Request`.
 
 ---
 
 ## 📬 Contact
 
 Yasin Ramazan Gök
-🌐 LinkedIn: [@yasinramazangok](https://linkedin.com/in/yasinramazangok) 
-🐙 GitHub  : [@yasinramazangok](https://github.com/yasinramazangok)
-📧 yasinrmzngok@gmail.com  
+- 🌐 LinkedIn: [@yasinramazangok](https://linkedin.com/in/yasinramazangok) 
+- 🐙 GitHub  : [@yasinramazangok](https://github.com/yasinramazangok)
+- 📧 yasinrmzngok@gmail.com  
 
 ---
 
