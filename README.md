@@ -28,6 +28,7 @@ My first GraphQL project using Apollo Server – built for learning and practici
 
 Follow the steps below to clone and run this project locally.
 
+```bash
 # 1. Clone the repo
 git clone https://github.com/your-username/graphql-crud-app.git
 
@@ -39,6 +40,7 @@ npm install
 
 # 4. Run the server
 node index
+```
 
 Visit: http://localhost:4000
 
